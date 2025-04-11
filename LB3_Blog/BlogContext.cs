@@ -39,7 +39,6 @@ public partial class BlogContext : DbContext
 
             entity.HasOne(d => d.IdUserNavigation).WithMany(p => p.Posts)
                 .HasForeignKey(d => d.IdUser)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("fk_posts_users");
         });
 

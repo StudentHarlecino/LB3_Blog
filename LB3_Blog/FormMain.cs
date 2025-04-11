@@ -14,7 +14,7 @@ namespace LB3_Blog
 
         protected override void OnLoad(EventArgs e)
         {
-            base.OnLoad(e);
+           base.OnLoad(e);
 
             this.db = new BlogContext();
 
